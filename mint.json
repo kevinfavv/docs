@@ -55,7 +55,8 @@
       "group": "How to use ?",
       "pages": [
         "platform/templates",
-        "platform/api"
+        "platform/api",
+        "platform/logs"
       ]
     },
     {
@@ -65,11 +66,9 @@
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Endpoint",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "api-reference/endpoint/generate"
       ]
     }
   ],
