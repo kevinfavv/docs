@@ -54,7 +54,8 @@
     {
       "group": "How to use ?",
       "pages": [
-        "platform/templates"
+        "platform/templates",
+        "platform/api"
       ]
     },
     {
