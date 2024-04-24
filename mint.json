@@ -48,14 +48,13 @@
       "group": "Get Started",
       "pages": [
         "introduction",
-        "quickstart",
-        "development"
+        "quickstart"
       ]
     },
     {
       "group": "How to use ?",
       "pages": [
-        "essentials/markdown"
+        "platform/templates"
       ]
     },
     {
