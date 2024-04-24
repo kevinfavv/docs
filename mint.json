@@ -34,7 +34,7 @@
   "anchors": [
     {
       "name": "Transactional Home",
-      "icon": "home",
+      "icon": "house",
       "url": "https://transactional.dev"
     },
     {
@@ -53,14 +53,9 @@
       ]
     },
     {
-      "group": "Essentials",
+      "group": "How to use ?",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "essentials/markdown"
       ]
     },
     {
