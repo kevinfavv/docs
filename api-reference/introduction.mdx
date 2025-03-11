@@ -14,26 +14,31 @@ The Transactional.dev API currently offers a single route: [Generate Documents](
 As the name suggests, this route allows you to generate PDF documents using predefined templates.
 
 ## Authentication
+
 The Transactional.dev API requires authentication via a token.
 This token is generated and provided in your dashboard, under the "API keys" tab.
 For each API request, you must include this token in the x-api-key header.
 
-
-
 ## Generate a document
+
 To use the Generate Documents route, you simply need to provide the template ID and the variables to be inserted into this template.
 Here is an overview of the required configuration:
 
-- HTTP Method: POST
-- URL: https://generate.transactional.dev/generate
-- Headers:
-    - Content-Type: application/json
-    - x-api-key: [Your API token]
-- Body:
+* HTTP Method: POST
 
-``` json
+* URL: [https://generate.transactional.dev/generate](https://generate.transactional.dev/generate)
+
+* Headers:
+
+  * Content-Type: application/json
+
+  * x-api-key: \[Your API token]
+
+* Body:
+
+```json
 {
-  "template_id": "your_template_id",
+  "templateId": "your_template_id",
   "variables": {
     "variable1": "value1",
     "variable2": {
@@ -48,16 +53,14 @@ Here is an overview of the required configuration:
 ## API Response
 
 <Note>
-    Documents are stored in cloudfront CDN and can be downloaded using the path provided in the response.
+  Documents are stored in cloudfront CDN and can be downloaded using the path provided in the response.
 </Note>
 
 The API response will be a JSON object containing the following fields:
-``` json
+
+```json
 {
   "requestId": "xxxxxxxxxxxxxxxxxx",
   "path": "https://d2t3dpwh2k1aak.cloudfront.net/documents/xxxxxxxxxxxxxxxxxx/xxxxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxxxx.pdf"
 }
 ```
-
-
-
